@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+  font-family: 'Work Sans', sans-serif;
+}
+.App th {
+  padding: 2px;
+}
+.App td {
+  padding: 2px;
+}
+
+.Table {
+  border-collapse: collapse;
+  width: 95vw;
+}

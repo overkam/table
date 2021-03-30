@@ -1,0 +1,120 @@
+.tableHead td {
+  padding: 10px;
+  font-size: 20px;
+  background-color: #C7DAF0;
+  color: #3E4347;
+  position: relative;
+}
+.tableHead{
+  font-weight: 700;
+}
+
+.tableFoot {
+  font-weight: 300;
+}
+.tableBody td {
+  position: relative;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #F5E1A6;
+}
+
+.tableFoot {
+  font-weight: 700;
+}
+
+.tableFoot td {
+  padding: 10px;
+}
+
+.merge {
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.divide {
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.leftUp {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.rightUp {
+  border-top-right-radius: 4px;
+}
+
+.rightDown {
+  border-bottom-right-radius: 4px;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.fixedWidth0 {
+  min-width: 90px;
+  text-align: left;
+}
+
+.fixedWidth1,.fixedWidth2 {
+  min-width: 158px;
+  text-align: left;
+}
+
+.sorter {
+  padding-right: 20px !important;
+}
+
+.arrowUp {
+  width: 14px;
+  position: absolute;
+  top: calc(50% - 6px);
+  right: 3%;
+  transform: rotate(-90deg);
+}
+
+.arrowDown {
+  width: 14px;
+  position: absolute;
+  top: calc(50% - 6px);
+  right: 3%;
+  transform: rotate(90deg);
+}
+
+.arrow {
+  width: 14px;
+  position: absolute;
+  top: calc(50% - 7px);
+  right: 15%;
+  visibility: hidden;
+  transform: rotate(-90deg);
+}
+
+.merge:hover .arrow{
+  visibility: visible;
+}
+
+.divide:hover .arrow{
+  visibility: visible;
+}
+
+.sorter {
+  text-align: left;
+  cursor: pointer;
+}
+
+.sorter:hover::after {
+  content: attr(data-title);
+  position: absolute;
+    bottom: -50%;
+    right: 10%;
+    z-index: 5; 
+    background: rgba(48, 48, 48, 0.603);
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 10%;
+    color: white
+}
